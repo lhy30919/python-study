@@ -11,15 +11,15 @@ dirname  ='../../test'
 filename =f'{dirname}/test.txt'
 
 # print(os.getcwd()) # 현재 경로 출력
-if os.path.isdir(dirname) == False:
+if os.path.isdir(dirname) == False:    # 디렉터리 생성
     os.mkdir(dirname)
 
 # 파일 생성
-if os.path.isfile(filename) == False :
+if os.path.isfile(filename) == False : # 파일 생성
     filename  = f'{filename}'
     fd        = open(filename, 'w')
-    fd.write(data)
-    fd.close()
+    fd.write(data)                     # 파일 수정
+    fd.close()                         # 파일 닫기
 # 파일 확인
 print(open(filename).read())
 # 파일 삭제
