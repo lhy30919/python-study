@@ -1,4 +1,4 @@
-id,name,pass
-1,lee,soldesk1.
-2,kim,pass1.
-3,park,soldesk3.
+id,name,pass, pass
+1,lee,soldesk1.,
+2,kim,soldesk2., pass1.
+3,park,soldesk3.,
